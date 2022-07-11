@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Bookshelf</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="showcase">
+            <section>
+                <h1 class="title">
+                    Welcome to Virtual Bookshelf
+                    
+                </h1>
+        <div class="subtitle">
+                <p>
+                    This is your own Library. You can add your favorite book,
+                </p>
+                <p>
+                    Search a Book, see finished and unfinished Book. Happy Reading!
+                </p>
+        </div>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <article class="insertBook">
+            <div class="book">
+                <p class="titleAdd">Add your favorite book below </p>
+                <div class="form-container">
+                    <form id="book">
+                        <div class="form-group">
+                            <label for="title">Title <span style="color:red ;">*</span></label>
+                            <input class="form-control" id="title" type="text" placeholder="Book title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="author">Author <span style="color:red ;">*</label>
+                            <input class="form-control" id="author" type="text" placeholder="Book author" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Year <span style="color:red ;">*</label>
+                            <input class="form-control" id="year" type="number" placeholder="Year published" required>
+                        </div>
+                        <div class="form-group">
+                            <input id="isComplete" type="checkbox">
+                            <label for="isComplete">Finished read?</label>
+                        </div>
+                        <div class="form-group">
+                            <button class="button-save" id="saveBook" type="button">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </article>
+
+        <article class="search">
+            <form id="searchBook">
+                <input id="searchBookTitle" type="text" placeholder="Search books by title .......">
+            </form>
+        </article>
+
+        <article class="listBook">
+            <div class="unfinishedBook">
+            <h2 class="h2 text-center">
+                <span>Unfinished Read</span>
+            </h2>
+            <div id="unfinished-read" class="listBook">
+                <!-- Unfinished 
+                     Book List -->
+            </div>
+        </div>
+        <div class="finishedBook">
+            <h2 class="h2 text-center">
+                <span>Finished Read</span>
+            </h2>
+            <div id="finished-read" class="listBook">
+                <!-- Finished 
+                     Book List -->
+            </div>
+        </div>
+        </article>
+    </main>
+
+    <footer>
+        <div>
+            <p>This project is for submission Front End Beginner - Dicoding Academy</p>
+        </div> 
+        <p>&copy; Copyright 2022 <a href="https://www.linkedin.com/in/i-gede-arya-danny-pratama-21116110a/" target="_blank">I Gede Arya Danny Pratama</p>   
+    </footer>
+
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>

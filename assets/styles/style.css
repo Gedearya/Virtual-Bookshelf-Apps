@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&family=PT+Sans:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #112D4E;
+  background-color: rgb(219, 226, 239);
+  font-family: 'PT Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Edu TAS Beginner', cursive;
+}
+
+.h2 {
+  margin-bottom: 5px;
+}
+.h2 span {
+  border-bottom: 2px solid #112D4E;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.small {
+  font-size: small;
+  opacity: 70%;
+}
+
+.title {
+  font-size: xx-large;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: large;
+}
+
+.showcase {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.search {
+  text-align: center;
+  margin: 10vh 32px;
+  padding: 0;
+  display: block;
+}
+
+.search input {
+  padding: 10px;
+  font-size: larger;
+  text-align: center;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #112D4E;
+  width: 75%;
+}
+
+.insertBook {
+  width: 60%;
+  padding:16px;
+}
+
+.listBook {
+  margin: 10vh 0;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding:16px;
+  
+}
+
+.listBook .unfinishedBook {
+  display: table-cell;
+  padding: 10px;
+}
+
+.listBook .finishedBook {
+  display: table-cell;
+  padding: 10px;
+}
+
+.titleAdd {
+  display: block;
+  text-align: center;
+  background-color: #3F72AF;
+  color: #ffffff;
+  margin: 10px auto 0px auto;
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 15px;
+}
+
+.button-add .active,
+.button-add:hover {
+  background-color: #112D4E;
+}
+
+.button-save {
+  display: block;
+  text-align: center;
+  background-color: #3F72AF;
+  color: #ffffff;
+  margin: 10px auto 0px auto;
+  padding: 10px 20px;
+  width: 100%;
+  border: 0;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.button-save .active,
+.button-save:hover {
+  background-color: #112D4E;
+}
+
+.button-finish {
+  display: inline;
+  background-color: #c6b605d9;
+  color: #ffffff;
+  margin: 10px 5px 0px auto;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.button-unfinish {
+  display: inline;
+  background-color:  #4E944F;
+  color: #ffffff;
+  margin: 10px 5px 0px auto;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.button-finish .active,
+.button-finish:hover
+ {
+  border: 0;
+  background-color: #a89a06;
+}
+
+.button-unfinish .active,
+.button-unfinish:hover {
+  border: 0;
+  background-color: #1A4D2E ;
+}
+
+.button-delete {
+  display: inline;
+  background-color: #cf061e;
+  color: #ffffff;
+  margin: 10px auto 0px auto;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.button-delete .active,
+.button-delete:hover {
+  border: 0;
+  background-color: #990000;
+}
+
+.form-container {
+  margin: 0.8rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  color: #392330;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+article {
+  margin: 20px auto;
+}
+
+section {
+  margin: 20px auto;
+}
+
+.action {
+  display: flex;
+  margin: auto 22px;
+}
+
+.action > * {
+  margin: auto 10px;
+}
+
+.listBook {
+  width: 100%;
+  margin: 1rem auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.listBook-item {
+  margin: 10px auto;
+  position: relative;
+  display: block;
+  padding: 1rem 3rem;
+  font-size: 20px;
+  color: #212529;
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  gap: 1rem !important;
+  align-items: baseline;
+}
+
+.book-detail {
+  margin: 5px auto;
+}
+
+.book-action {
+  margin: 5px auto;
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  background-color: rgb(17, 45, 78);
+  padding: 7vh 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #f5eee4;
+}
+
+footer a:hover,
+footer a:active {
+  text-decoration: none;
+  color: #035a54;
+}
+
+@media (max-width: 670px) {
+  .showcase {
+    text-align: center;
+    margin: 18vh 32px;
+    display: block;
+  }
+
+  .listBook {
+    display: block;
+    width: 100%;
+  }
+  
+  .book {
+    display: block;
+    width: 100%;
+  }
+}
